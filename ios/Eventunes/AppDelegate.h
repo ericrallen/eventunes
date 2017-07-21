@@ -8,9 +8,13 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <SpotifyAuthentication/SpotifyAuthentication.h>
+#import <SpotifyAudioPlayback/SpotifyAudioPlayback.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, SPTAudioStreamingDelegate>
 
+@property (nonatomic, strong) SPTAuth *auth;
+@property (nonatomic, strong) SPTAudioStreamingController *player;
 @property (nonatomic, strong) UIWindow *window;
 
 @end

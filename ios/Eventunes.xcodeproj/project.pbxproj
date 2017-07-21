@@ -40,6 +40,10 @@
 		655B612F66104E6386C3D490 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A255743ED448456EB36C9128 /* FBSDKShareKit.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		B0BDC7A096674A62B9162DFB /* libRCTFBSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1105EF2C067F4F16B01DAB24 /* libRCTFBSDK.a */; };
+		FED5AFE11F2179F900308FC2 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5AFDE1F2179F900308FC2 /* SpotifyAudioPlayback.framework */; };
+		FED5AFE21F2179F900308FC2 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5AFDF1F2179F900308FC2 /* SpotifyAuthentication.framework */; };
+		FED5AFE31F2179F900308FC2 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5AFE01F2179F900308FC2 /* SpotifyMetadata.framework */; };
+		FED5AFE61F217AAC00308FC2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5AFE51F217AAC00308FC2 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -285,6 +289,11 @@
 		8C0BF1218A91458EA980C17A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ./ios/Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A255743ED448456EB36C9128 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ./ios/Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		B1A2999081734E3681C804BC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ./ios/Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		FED5AFDE1F2179F900308FC2 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = Frameworks/SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		FED5AFDF1F2179F900308FC2 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = Frameworks/SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		FED5AFE01F2179F900308FC2 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = Frameworks/SpotifyMetadata.framework; sourceTree = "<group>"; };
+		FED5AFE41F217A2700308FC2 /* Eventunes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Eventunes.entitlements; path = Eventunes/Eventunes.entitlements; sourceTree = "<group>"; };
+		FED5AFE51F217AAC00308FC2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +309,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED5AFE61F217AAC00308FC2 /* AVFoundation.framework in Frameworks */,
+				FED5AFE11F2179F900308FC2 /* SpotifyAudioPlayback.framework in Frameworks */,
+				FED5AFE21F2179F900308FC2 /* SpotifyAuthentication.framework in Frameworks */,
+				FED5AFE31F2179F900308FC2 /* SpotifyMetadata.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -423,6 +436,7 @@
 		13B07FAE1A68108700A75B9A /* Eventunes */ = {
 			isa = PBXGroup;
 			children = (
+				FED5AFE41F217A2700308FC2 /* Eventunes.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -504,6 +518,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* EventunesTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				FED5AFC11F2179F700308FC2 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -526,6 +541,17 @@
 				FE60E5141F15C6A50064BBA1 /* libRCTFBSDK.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FED5AFC11F2179F700308FC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FED5AFE51F217AAC00308FC2 /* AVFoundation.framework */,
+				FED5AFDE1F2179F900308FC2 /* SpotifyAudioPlayback.framework */,
+				FED5AFDF1F2179F900308FC2 /* SpotifyAuthentication.framework */,
+				FED5AFE01F2179F900308FC2 /* SpotifyMetadata.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,6 +644,14 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = QG4ZAJU8BS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1090,7 +1124,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = QG4ZAJU8BS;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
@@ -1114,7 +1151,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QG4ZAJU8BS;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",

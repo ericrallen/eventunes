@@ -4,11 +4,11 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { GraphRequest, GraphRequestManager } from 'react-native-fbsdk';
 
-import Login from './components/Login/Login.js';
-
-import Events from './components/Events/Events.js';
-
 import moment from 'moment';
+
+import Login from './components/Login';
+
+import Events from './components/Events';
 
 export default class App extends Component {
   constructor(props, context) {
