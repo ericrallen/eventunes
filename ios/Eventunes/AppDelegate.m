@@ -14,6 +14,8 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
+#import "SpotifyModule.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -36,7 +38,7 @@
 
   [[FBSDKApplicationDelegate sharedInstance] application:application
         didFinishLaunchingWithOptions:launchOptions];
-
+           
   return YES;
 }
 
@@ -45,14 +47,36 @@
         sourceApplication:(NSString *)sourceApplication 
         annotation:(id)annotation {
 
-    BOOL handled = [[FBSDKApplicationDelegate sharedInstance] 
-        application:application
-        openURL:url
-        sourceApplication:sourceApplication
-        annotation:annotation
-    ];
-    // Add any custom logic here.
+  // Creates a string from the URL
+  NSString *myString = url.absoluteString;
+  
+  // Extracts the prefix of the string (all before the colon)
+  NSString *prefix = [myString componentsSeparatedByString:@":"][0];
+  
+  // Callback for Spotify Auth
+  if ([prefix isEqualToString:@"eventunes-spotify"])
+  {
+    return [SpotifyModule application:application
+                              openURL:url
+                    sourceApplication:sourceApplication
+                           annotation:annotation];
+  }
+  // Callback for anything else (only Facebook here)
+  else
+  {
+    BOOL handled = [[FBSDKApplicationDelegate sharedInstance]
+                    application:application
+                    openURL:url
+                    sourceApplication:sourceApplication
+                    annotation:annotation
+                    ];
+    
+    
     return handled;
+  }
+
+  
 }
 
 @end
+
