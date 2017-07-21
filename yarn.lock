@@ -3487,6 +3487,10 @@ react-native-fbsdk@^0.6.0:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/react-native-fbsdk/-/react-native-fbsdk-0.6.1.tgz#268bdbda5a16f5341ca43e3fa1beb88801e35a92"
 
+react-native-spotify:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-spotify/-/react-native-spotify-1.0.1.tgz#ed57a2d038704d428230f7adcd3219297b733dcd"
+
 react-native@^0.45.1:
   version "0.45.1"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.45.1.tgz#b3283c4a88233421f9c662a2ff1a4ccc8a9f07c0"

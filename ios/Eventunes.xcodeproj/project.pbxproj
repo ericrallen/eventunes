@@ -43,7 +43,7 @@
 		FED5AFE11F2179F900308FC2 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5AFDE1F2179F900308FC2 /* SpotifyAudioPlayback.framework */; };
 		FED5AFE21F2179F900308FC2 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5AFDF1F2179F900308FC2 /* SpotifyAuthentication.framework */; };
 		FED5AFE31F2179F900308FC2 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5AFE01F2179F900308FC2 /* SpotifyMetadata.framework */; };
-		FED5AFE61F217AAC00308FC2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5AFE51F217AAC00308FC2 /* AVFoundation.framework */; };
+		FED5AFF11F21A10C00308FC2 /* SpotifyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5AFF01F21A10C00308FC2 /* SpotifyModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +294,9 @@
 		FED5AFE01F2179F900308FC2 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = Frameworks/SpotifyMetadata.framework; sourceTree = "<group>"; };
 		FED5AFE41F217A2700308FC2 /* Eventunes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Eventunes.entitlements; path = Eventunes/Eventunes.entitlements; sourceTree = "<group>"; };
 		FED5AFE51F217AAC00308FC2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FED5AFED1F219CE700308FC2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FED5AFEF1F21A10C00308FC2 /* SpotifyModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotifyModule.h; path = Eventunes/SpotifyModule.h; sourceTree = "<group>"; };
+		FED5AFF01F21A10C00308FC2 /* SpotifyModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpotifyModule.m; path = Eventunes/SpotifyModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,7 +312,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FED5AFE61F217AAC00308FC2 /* AVFoundation.framework in Frameworks */,
 				FED5AFE11F2179F900308FC2 /* SpotifyAudioPlayback.framework in Frameworks */,
 				FED5AFE21F2179F900308FC2 /* SpotifyAuthentication.framework in Frameworks */,
 				FED5AFE31F2179F900308FC2 /* SpotifyMetadata.framework in Frameworks */,
@@ -436,6 +438,8 @@
 		13B07FAE1A68108700A75B9A /* Eventunes */ = {
 			isa = PBXGroup;
 			children = (
+				FED5AFEF1F21A10C00308FC2 /* SpotifyModule.h */,
+				FED5AFF01F21A10C00308FC2 /* SpotifyModule.m */,
 				FED5AFE41F217A2700308FC2 /* Eventunes.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -546,6 +550,7 @@
 		FED5AFC11F2179F700308FC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FED5AFED1F219CE700308FC2 /* WebKit.framework */,
 				FED5AFE51F217AAC00308FC2 /* AVFoundation.framework */,
 				FED5AFDE1F2179F900308FC2 /* SpotifyAudioPlayback.framework */,
 				FED5AFDF1F2179F900308FC2 /* SpotifyAuthentication.framework */,
@@ -1012,6 +1017,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED5AFF11F21A10C00308FC2 /* SpotifyModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
